@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+#parent-div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: rgb(250, 247, 247);
+}
+
+#heading {
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#child-div {
+  flex: 1;
+  padding: 20px;
+  color: rgb(54, 52, 52);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#name,
+#email,
+textarea {
+  height: 50px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  outline: none;
+  font-size: medium;
+  border-radius: 6px;
+}
+textarea{
+  padding-top: 10px;
+}
+
+#submit {
+  padding: 20px;
+  background-color: black;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: large;
+  border-radius: 6px;
+}
+
+#child-div p,
+#child-div ul,
+#child-div li {
+  margin: 10px 0;
+  color: rgb(53, 51, 51);
+}
+
+#contact-message {
+  color: #464444;
+}

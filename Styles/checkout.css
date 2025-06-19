@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #checkoutMain {
+    width: 100%;
+    height: auto;
+    padding: 20px 0px 40px 0px;
+    background-color: rgb(250, 247, 247);
+    font-family: sans-serif;
+  }
+  #checkoutHead {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+  }
+  #checkoutHead h1 {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  #checkoutMessage{
+    text-align: center;
+    font-size: small;
+    padding: 5px 0px 0px 0px;
+    font-weight: bold;
+    color: rgb(71, 71, 70);
+    display: none;
+  }
+  #checkoutForm{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  #infoDiv{
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding: 0px 0px 20px 0px;   
+  }
+
+  #infoDiv input{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: medium;
+  }
+  #checkoutBtn{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+  #infoDiv label{
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+  }
+  #paymentDiv{
+    width: 100%;
+    height: auto;
+    display: grid;
+    gap: 15px;
+  }
+  #paymentDiv p{
+    font-size: medium;
+  }
+  label{
+    border: 1px soild red;
+  }
+   #cod, #upi, #online, #debit, #credit{
+    height: 10px;
+    width: 10px;
+  } 
+ 
+  @media only screen and (max-width: 980px) {
+    #checkoutHead {
+      width: 58%;
+    }
+    #checkoutHead h1 {
+      font-size: x-large;
+    }
+    #checkoutForm {
+      width: 58%;
+    }
+    #checkoutBtn {
+        font-size: x-small;
+        font-weight: 100;
+      }
+  }
+  
+  @media only screen and (max-width: 450px) {
+  
+    #checkoutHead {
+      width: 90%;
+      margin-bottom: 0px;
+    }
+    #checkoutHead h1 {
+      font-size: medium;
+    }
+    #checkoutForm {
+      width: 90%;
+    }
+    #checkoutBtn {
+        font-size: xx-small;
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-weight: 100;
+      }
+   
+  }
+  
+  
+  
+  

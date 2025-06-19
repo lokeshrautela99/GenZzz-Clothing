@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page - GenZzz</title>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/checkout.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <main id="checkoutMain">
+      <div id="checkoutHead">
+        <h1>Checkout</h1>
+        <p id="checkoutMessage"></p>
+      </div>
+      <div id="checkoutForm">
+        <form id="placeOrderForm" action="">
+          <div id="infoDiv">
+            <p>My information</p>
+            <label for="firstname">First name*</label>
+            <input type="text" id="firstname" name="firstname" required />
+            <label for="lastname">Last name*</label>
+            <input type="text" id="lastname" name="lastname" required />
+            <input
+              id="checkoutBtn"
+              type="submit"
+              value="P L A C E    O R D E R"
+            />
+            <label for="deliveryAddress">Delivery Address</label>
+            <input
+              type="text"
+              id="deliveryAddress"
+              name="deliveryAddress"
+              required
+            />
+          </div>
+          <!-- infoDiv closed -->
+          <div id="paymentDiv">
+            <p>Payment Method</p>
+            <label for="cod"
+              >Cash on Delivery
+              <input type="radio" id="cod" name="cod" />
+            </label>
+            <label for="upi"
+              >UPI
+              <input type="radio" id="upi" name="upi" />
+            </label>
+            <label for="online"
+              >Online Payment
+              <input type="radio" id="online" name="online" />
+            </label>
+            <label for="debit"
+              >Debit Card
+              <input type="radio" id="debit" name="debit" />
+            </label>
+            <label for="credit"
+              >Credit Card
+              <input type="radio" id="credit" name="credit" />
+            </label>
+          </div>
+          <!-- paytmentMehtod div closed  -->
+        </form>
+      </div>
+      <!-- checkout form closed  -->
+    </main>
+    <!-- main Closed  -->
+    <div id="footer"></div>
+    <script type="module" src="./Scripts/checkout.js"></script>
+    <script type="module" src="./Scripts/navbar.js"></script>
+    <script type="module" src="./Scripts/footer.js"></script>
+  </body>
+</html>

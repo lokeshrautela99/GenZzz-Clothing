@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page - GenZzz</title>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/login.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <div id="parentDiv">
+      <div id="child1">
+        <form id="login_form" action="">
+          <h1 class="title">LOGIN</h1>
+          <p id="loginAlert"></p>
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" required />
+          <p id="emailAlert"></p>
+          <p id="passAlert"></p>
+          <label for="password">PASSWORD</label>
+          <input type="password" id="password" required />
+          <input id="submit" type="submit" value="S I G N  I N" />
+          <div id="forgetpass_div">
+            <a href="signup.html" id="create_acc">Create account</a>
+            <a href="signup.html" id="forget_password">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+      <!-- child1 Closed  -->
+      <div id="child2">
+        <!-- slider fun()  -->
+      </div>
+    </div>
+    <!-- parentDiv Closed  -->
+    <footer id="footer"></footer>
+    <script type="module" src="./Scripts/login.js"></script>
+    <script type="module" src="./Scripts/footer.js"></script>
+    <script type="module" src="./Scripts/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - GenZzz</title>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/acp.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <div id="parent-div">
+      <div id="heading">
+        <h1 class="heading">Contact Us</h1>
+      </div>
+      <div id="child-div">
+        <div>
+          <h2 class="heading">Get in Touch</h2>
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+          <p id="contact-message"></p>
+        </div>
+        <div>
+          <h2 class="heading">Contact Information</h2>
+          <p>Email: support@genzzz.com</p>
+          <p>Phone: +91 0000000009</p>
+        </div>
+      </div>
+      <!-- child-div closed  -->
+    </div>
+    <!-- parent-div closed  -->
+    <footer id="footer"></footer>
+    <script type="module" src="./Scripts/contact.js"></script>
+    <script type="module" src="./Scripts/navbar.js"></script>
+    <script type="module" src="./Scripts/footer.js"></script>
+  </body>
+</html>

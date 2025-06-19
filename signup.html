@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenZee - Signup Page</title>
+    <link rel="stylesheet" href="./Styles/navbar.css" />
+    <link rel="stylesheet" href="./Styles/login.css" />
+    <link rel="stylesheet" href="./Styles/footer.css" />
+  </head>
+  <body>
+    <nav id="navbar"></nav>
+    <div id="parentDiv">
+      <div id="child1">
+        <form id="signup_form" action="">
+          <h1 class="title">CREATE ACCOUNT</h1>
+          <label for="firstname">FIRSTNAME</label>
+          <input type="text" id="firstname" required />
+          <label for="lastname">LASTNAME</label>
+          <input type="text" id="lastname" required />
+          <label for="useremail">EMAIL</label>
+          <input type="email" id="useremail" required />
+          <label for="mobile">Phone No</label>
+          <input type="text" id="mobile" />
+          <label for="userpassword">PASSWORD</label>
+          <input type="password" id="userpassword" required />
+          <input id="submit" type="submit" value="C R E A T E" />
+        </form>
+      </div>
+      <!-- child1 Closed  -->
+
+      <div id="child2">
+        <!-- slider fun()  -->
+      </div>
+    </div>
+    <!-- parentDiv Closed  -->
+    <footer id="footer"></footer>
+    <script type="module" src="./Scripts/signup.js"></script>
+    <script type="module" src="./Scripts/footer.js"></script>
+    <script type="module" src="./Scripts/navbar.js"></script>
+  </body>
+</html>

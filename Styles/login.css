@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#loginAlert {
+  color: red;
+  font-weight: bold;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#emailAlert,
+#passAlert {
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#parentDiv {
+  width: 90%;
+  height: auto;
+  /* min-height: 100vh; */
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#child1,
+#child2 {
+  width: 48%;
+  height: auto;
+}
+#loginImg {
+  width: 100%;
+  height: 500px;
+}
+#signupImg {
+  width: 100%;
+  height: 520px;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: smaller;
+}
+
+#email,
+#password,
+#firstname,
+#lastname,
+#useremail,
+#mobile,
+#userpassword {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 40px;
+  border: 1px solid rgb(206, 196, 196);
+  outline: none;
+  font-size: medium;
+  padding-left: 10px;
+}
+
+#firstname,
+#lastname,
+#useremail,
+#mobile,
+#userpassword {
+  margin-bottom: 15px;
+  font-size: medium;
+}
+
+#submit {
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: white;
+  font-family: Futura, sans-serif;
+  margin-bottom: 20px;
+}
+#forgetpass_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#forget_password,
+#create_acc {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+  border: none;
+  background: white;
+  color: black;
+}
+@media only screen and (max-width: 980px) {
+  #parentDiv {
+    width: 90%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #child1,
+  #child2 {
+    width: 48%;
+    height: auto;
+  }
+  #loginImg {
+    width: 100%;
+    height: 410px;
+  }
+  #signupImg {
+    width: 100%;
+    height: 585px;
+  }
+  #login_form,
+  #signup_form {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #parentDiv {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #child1 {
+    width: 100%;
+    height: auto;
+  }
+
+  #child2 {
+    display: none;
+  }
+
+  #login_form,
+  #signup_form {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+  }
+
+  #firstname,
+  #lastname,
+  #useremail,
+  #mobile,
+  #userpassword,
+  #email,
+  #password {
+    font-size: small;
+  }
+}

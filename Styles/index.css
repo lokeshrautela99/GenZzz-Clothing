@@ -1,0 +1,552 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#main, #searchMain{
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding: 20px 0px 20px 0px;
+}
+
+#womenImg{
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  text-align: center;
+  background-image: url(../images/ProductData/Main/MainWomen2.avif);
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#kidImg {
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  text-align: center;
+  background-image: url(../images/ProductData/Main/MainKid1.avif);
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#accessoriesImg{
+  width: 80%;
+  height: 700px;
+  margin: auto;
+  text-align: center;
+  background-image: url(../images/ProductData/Main/accessories1.webp);
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#womenImg p,
+#kidImg p,
+#accessoriesImg p {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 600px;
+  color: white;
+}
+#womenImg button,
+#kidImg button,
+#accessoriesImg button {
+  border: 0px;
+  width: 100px;
+  height: 50px;
+  background: black;
+  color: white;
+}
+
+#menImg {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  align-content: end;
+  background-image: url(../images/ProductData/Main/MainMen1.avif);
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#menImg p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+#menImg button {
+  border: 0px;
+  width: 100px;
+  height: 50px;
+  margin: 10px 0px 10px 5px;
+  background: black;
+  color: white;
+}
+
+#lastImg {
+  width: 80%;
+  height: 280px;
+  margin: auto;
+  text-align: center;
+  color: white;
+  background-image: url(../images/ProductData/Main/MainBrandLast.jfif);
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#lastImg h1 {
+  padding-top: 100px;
+  font-size: 45px;
+}
+#lastImg h5 {
+  font-size: 25px;
+}
+
+.heading {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.heart {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+/* Searched Iteam div styling  */
+#searchAlert{
+  color: red;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  display: none;
+}
+#searchedDiv {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 20px;
+  display: none;
+}
+
+#searchHeading {
+  font-size: medium;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#contentDiv{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+  position: relative;
+}
+.slide-left-btn{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  border: none;
+  outline: none;
+  color: black;
+  color: rgb(100, 97, 97);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  background-color: white;
+  cursor: pointer;
+  
+}
+.slide-right-btn{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  border: none;
+  outline: none;
+  color: black;
+  color: rgb(100, 97, 97);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  background-color: white;
+  cursor: pointer;
+}
+.slide-left-btn:hover, .slide-right-btn:hover{
+  width: 60px;
+  height: 60px;
+  background-color: grey;
+  color: whitesmoke;
+  border: 1px solid a6a6a6;
+  border-radius: 50%;
+}
+
+#searchedItemsData {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.searchItems img {
+  width: 100%;
+  height: 340px;
+}
+
+#womenProduct,
+#menProduct,
+#kidProduct,
+#accessoriesProduct {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#womenProduct::-webkit-scrollbar{
+  display: none;
+}
+
+#menProduct::-webkit-scrollbar{
+  display: none;
+}
+
+#kidProduct::-webkit-scrollbar{
+  display: none;
+}
+#accessoriesProduct::-webkit-scrollbar{
+  display: none;
+}
+
+#searchedItemsData {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.searchItems img {
+  width: 100%;
+  height: 340px;
+}
+
+.items,
+.searchItems {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 5px;
+}
+
+.items img {
+  width: 280px;
+  height: 340px;
+}
+
+.items h3,
+.searchItems h3 {
+  font-size: 12px;
+}
+
+.items h2,
+.searchItems h2 {
+  font-size: small;
+  color: rgb(20, 20, 20);
+}
+
+.items b,
+.searchItems b {
+  color: rgb(49, 48, 48);
+  font-size: 14px;
+}
+
+.items button,
+.searchItems button {
+  width: 70%;
+  height: 35px;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: small;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 980px) {
+
+  #main, #searchMain{
+    width: 100%;
+    height: auto;
+  }
+
+  #womenImg {
+    height: 400px;
+    background-image: url(../images/ProductData/Main/MainWomen4.avif);
+  }
+
+  #kidImg {
+    height: 400px;
+    background-image: url(../images/ProductData/Main/MainKid1.avif);
+  }
+
+  #accessoriesImg{
+    height: 400px;
+    background-image: url(../images/ProductData/Main/accessories2.jpg);
+  }
+
+  #womenImg p,
+  #kidImg p,
+  #accessoriesImg p {
+    padding-top: 300px;
+    color: white;
+  }
+
+  #menImg {
+    height: 400px;
+    background-image: url(../images/ProductData/Main/MainMen5.jpg);
+  }
+
+  #lastImg {
+    height: 150px;
+    color: white;
+    background-image: url(../images/ProductData/Main/MainBrandLast.jfif);
+  }
+
+  #lastImg h1 {
+    padding-top: 50px;
+    font-size: 25px;
+  }
+  #lastImg h5 {
+    font-size: 15px;
+  }
+
+  .heart {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  .slide-left-btn, .slide-right-btn{
+    display: none;
+  }
+
+  #womenProduct,
+  #menProduct,
+  #kidProduct,
+  #accessoriesProduct {
+    margin-bottom: 30px;
+  }
+  #searchedDiv {
+    width: 80%;
+  }
+
+  #searchedItemsData {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .searchItems img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .items img {
+    width: 200px;
+    height: 260px;
+    margin: auto;
+    margin: 5px 10px 0px 10px;
+  }
+
+  .items h2,.items h3 ,.searchItems h2,.searchItems h3 {
+    width: 90%;
+    margin: auto;
+    font-size: small;
+    color: rgb(39, 39, 39);
+  }
+
+  .items b,
+  .searchItems b {
+    width: 90%;
+    margin: auto;
+    color: rgb(49, 48, 48);
+    font-size: small;
+  }
+
+  .items button,
+  .searchItems button {
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #main, #searchMain{
+    width: 100%;
+    height: auto;
+  }
+
+  #womenImg {
+    width: 90%;
+    height: 400px;
+    background-image: url(../images/ProductData/Main/MainWomen1.avif);
+  }
+
+  #kidImg {
+    width: 90%;
+    height: 400px;
+    background-image: url(../images/ProductData/Main/MainKid2.avif);
+  }
+
+  #accessoriesImg{
+    width: 90%;
+    height: 400px;
+    background-image: url(../images/ProductData/Main/accessories3.avif);
+  }
+
+  #womenImg p,
+  #kidImg p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 330px;
+    color: white;
+  }
+  
+  #womenImg button,
+  #kidImg button {
+    border: 0px;
+    width: 80px;
+    height: 30px;
+    background: black;
+    color: white;
+  }
+
+  #menImg {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    align-content: end;
+    background-image: url(../images/ProductData/Main/MainMen3.webp);
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  #menImg p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  #lastImg {
+    width: 90%;
+    height: 150px;
+    background-image: url(../images/ProductData/Main/MainBrandLast.jfif);
+  }
+
+  #lastImg h1 {
+    font-size: medium;
+    padding-top: 55px;
+  }
+  #lastImg h5 {
+    font-size: x-small;
+  }
+
+  .heading {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: small;
+    font-weight: bold;
+  }
+
+  .heart {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+
+  .slide-left-btn, .slide-right-btn{
+    display: none;
+  }
+
+  #womenProduct,
+  #menProduct,
+  #kidProduct,
+  #accessoriesProduct{
+    width: 90%;
+  }
+  #searchedDiv {
+    width: 90%;
+  }
+  #head {
+    font-size: small;
+    padding-bottom: 10px;
+  }
+
+  #searchedItemsData {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .searchItems img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .items {
+    width: 100%;
+  }
+
+  .items img {
+    width: 150px;
+    height: 200px;
+    margin: auto;
+  }
+  .items h3, .searchItems h3{
+    width: 100%;
+    font-size: x-small;
+  }
+  .items h2, .searchItems h2{
+    width: 100%;
+    font-size: small;
+  }
+
+  .items b,
+  .searchItems b {
+    width: 100%;
+    color: rgb(49, 48, 48);
+    font-size: x-small;
+  }
+
+  .items button,
+  .searchItems button {
+    width: 70%;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: x-small;
+  }
+}
