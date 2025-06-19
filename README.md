@@ -1,1 +1,2 @@
-# GenZzz-Clothing
+# GenZzz - Responsive Clothing Website
+
